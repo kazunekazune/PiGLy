@@ -1,0 +1,14 @@
+# MySQL data directory
+docker/mysql/data/
+
+# Environment files
+.env
+.env.backup
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db 
