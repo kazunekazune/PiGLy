@@ -13,7 +13,7 @@ class WeightLog extends Model
         'user_id',
         'date',
         'weight',
-        'calorie_intake',
+        'calories',
         'exercise_time',
         'exercise_content',
     ];
@@ -21,7 +21,7 @@ class WeightLog extends Model
     protected $casts = [
         'date' => 'date',
         'weight' => 'decimal:1',
-        'calorie_intake' => 'integer',
+        'calories' => 'integer',
         'exercise_time' => 'datetime:H:i',
     ];
 

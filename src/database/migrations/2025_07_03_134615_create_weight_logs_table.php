@@ -18,9 +18,9 @@ class CreateWeightLogsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->date('date');
             $table->decimal('weight', 4, 1);
-            $table->integer('calorie_intake');
+            $table->integer('calories');
             $table->time('exercise_time');
-            $table->string('exercise_content', 120);
+            $table->text('exercise_content');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

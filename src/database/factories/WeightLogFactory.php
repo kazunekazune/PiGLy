@@ -26,7 +26,7 @@ class WeightLogFactory extends Factory
             'user_id' => User::factory(),
             'date' => $this->faker->dateTimeBetween('-30 days', 'now'),
             'weight' => $this->faker->randomFloat(1, 50.0, 100.0),
-            'calorie_intake' => $this->faker->numberBetween(1200, 3000),
+            'calories' => $this->faker->numberBetween(1200, 3000),
             'exercise_time' => $this->faker->time('H:i:s'),
             'exercise_content' => $this->faker->randomElement([
                 'ウォーキング',
